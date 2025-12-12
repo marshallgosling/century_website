@@ -1,0 +1,236 @@
+.product-service {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+/* 标题区域 - 居中 + 滚动渐入 */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  /* 延迟动效 */
+  transition-delay: 0.1s;
+}
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+.section-title p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* 导航按钮 - 居中+水平显示+动效 */
+.service-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: nowrap;
+  /* 延迟动效 */
+  transition-delay: 0.3s;
+}
+.service-nav-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+/* 按钮hover动效：渐变背景+图标旋转 */
+.service-nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 102, 204, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+.service-nav-item:hover::before {
+  left: 100%;
+}
+.service-nav-item i {
+  transition: transform 0.3s ease;
+}
+.service-nav-item:hover:not(.active) i {
+  transform: rotate(15deg);
+}
+/* 仅单个激活态高亮 + 动效 */
+.service-nav-item.active {
+  background-color: #0066cc;
+  color: #fff;
+  border-color: #0066cc;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+  transform: translateY(-2px);
+}
+.service-nav-item:hover:not(.active) {
+  background-color: #e6f0ff;
+  border-color: #cce0ff;
+  transform: translateY(-1px);
+}
+.service-nav-item:active {
+  transform: translateY(0);
+}
+
+/* 服务内容区域 + 淡入缩放动效 */
+.service-content {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  /* 延迟动效 */
+  transition-delay: 0.5s;
+}
+.service-desc {
+  flex: 1;
+  padding: 30px;
+}
+.service-desc h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+.service-desc p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.service-desc .btn {
+  padding: 8px 24px;
+  background-color: #0066cc;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+/* 按钮点击波纹动效 */
+.service-desc .btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+.service-desc .btn:hover {
+  background-color: #0052a3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2);
+}
+.service-desc .btn:active::after {
+  width: 300px;
+  height: 300px;
+}
+.service-img {
+  flex: 1;
+  overflow: hidden;
+}
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.service-content:hover .service-img img {
+  transform: scale(1.03);
+}
+/* 卡片容器 - 2行2列布局 */
+.service-module {
+  margin-top: 50px;
+}
+.service-module .service-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.service-module .service-card-wrap {
+  flex: 1;
+  min-width: calc(50% - 10px); /* 每行2个，间距20px */
+}
+
+/* 服务卡片样式 - 左右等高布局 */
+.service-module .service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  width: 100%;
+  height: 100%; /* 确保卡片高度充满容器 */
+}
+.service-module .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 102, 204, 0.1);
+}
+
+/* 左侧图片区域 - 等高 */
+.service-module .service-icon-wrap {
+  width: 80px; /* 固定宽度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6f0ff;
+  border-radius: 8px 0 0 8px;
+  flex-shrink: 0; /* 防止压缩 */
+}
+.service-module .service-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  color: #0066cc;
+  font-size: 20px;
+}
+
+/* 右侧文字区域 - 高度与左侧相等 */
+.service-module .service-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 文字垂直居中 */
+}
+.service-module .service-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+.service-module .service-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}

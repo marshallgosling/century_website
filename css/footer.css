@@ -1,0 +1,72 @@
+/* 尾部基础样式 */
+.footer {
+  background-color: #1b1e37; /* 深色背景匹配原图 */
+  color: #fff;
+  padding: 40px 0;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* 左侧品牌区域 */
+.footer-brand {
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo-group img {
+  height: 50px; /* 统一Logo高度 */
+  object-fit: contain;
+}
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+.footer-contact {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+/* 右侧导航区域 */
+.footer-nav {
+  flex: 0 1 180px;
+  margin-bottom: 20px;
+}
+.footer-nav h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav li {
+  margin-bottom: 10px;
+}
+.footer-nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+  color: #fff;
+}

@@ -1,0 +1,50 @@
+/* 全局样式 */
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+.section-full {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.section {
+  padding: 80px 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #0066cc;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+/* 动画类 */
+/* linkwise风格：淡入上移 */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.animate-fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* cnfcloud风格：滑入 */
+.animate-slide-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.animate-slide-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}

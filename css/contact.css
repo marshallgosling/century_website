@@ -1,0 +1,37 @@
+/* 联系我们模块（linkwise风格） */
+.contact-linkwise {
+  background-color: #fff;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f7ff;
+  color: #0066cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contact-text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.contact-text p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}

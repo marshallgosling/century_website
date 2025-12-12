@@ -1,0 +1,213 @@
+/* 导航条（复刻cnfcloud） */
+#cnfNavMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-cnf {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s, padding 0.3s;
+}
+.navbar-cnf.scrolled {
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+}
+.logo-cnf {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-cnf img {
+  height: 36px;
+}
+.logo-nvidia {
+  height: 20px;
+  margin-left: 8px;
+}
+.nav-link-cnf {
+  color: #333;
+  font-size: 14px;
+  margin: 0 12px;
+  padding: 8px 0 !important;
+  position: relative;
+}
+.nav-link-cnf:hover {
+  color: #0066cc;
+}
+.nav-link-cnf::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0066cc;
+  transition: width 0.3s;
+}
+.nav-link-cnf:hover::after {
+  width: 100%;
+}
+.nav-right-cnf {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.lang-switch-cnf {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.lang-btn-cnf {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.lang-btn-cnf.active {
+  border-radius: 40px;
+  background-color: #0066cc;
+  color: #fff;
+}
+.workbench-btn-cnf {
+  padding: 5px 18px;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
+/* 全屏视频模块 */
+.video-full {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+}
+.video-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.video-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.video-play-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0066cc;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* 关于世纪利通模块（全屏+linkwise动画） */
+.about-full {
+  background-color: #fff;
+  margin-top: 200px;
+  /* padding: 100px 0; */
+}
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0066cc;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.about-desc {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 16px;
+  color: #666;
+}
+.about-map {
+  width: 100%;
+  height: 400px;
+  background-color: #12232d;
+  color: #fff;
+  padding: 50px;
+  margin: 50px auto 0 auto;
+  /* max-width: 1200px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-map-text1 {
+  font-size: 22px;
+}
+.about-map-text2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.about-map-text3 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.about-map-img {
+  flex: 0 0 250px;
+}
+.about-map-img img {
+  width: 100%;
+}
+.enterprise-info {
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.world-map {
+  flex: 0 0 400px;
+}
+.world-map img {
+  width: 100%;
+}
+.enterprise-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.enterprise-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
