@@ -1,7 +1,7 @@
 $(function () {
 
   // 手风琴交互逻辑
-  $(".accordion-item").click(function () {
+  $(".accordion-item").hover(function () {
     $(".accordion-item").removeClass("active");
     $(this).addClass("active");
   });

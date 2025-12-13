@@ -1,4 +1,5 @@
 $(function () {
+  $(".solution-item").find('> h3').eq(0).css('color', '#0066cc');
   // 滚动触发动效
   $(window).scroll(function () {
     $(".fade-in").each(function () {

@@ -1,7 +1,4 @@
 $(function () {
-  // 初始化隐藏后2个服务
-  $('.service-module').eq(1).hide();
-  $('.service-module').eq(2).hide();
   // 滚动动效触发
   $(window).scroll(function () {
     // 标题、导航滚动渐入
@@ -35,7 +32,7 @@ $(function () {
   $(window).trigger("scroll");
 
   // 导航按钮切换逻辑 - 单个高亮 + 内容切换动效
-  $(".service-nav-item").click(function () {
+  $(".service-nav-item").hover(function () {
     // 移除所有按钮active，当前按钮添加
     $(".service-nav-item").removeClass("active");
     $(this).addClass("active");
@@ -57,9 +54,6 @@ $(function () {
           "src",
           "https://picsum.photos/id/119/600/400"
         );
-        // 显示对应服务模块
-        $('.service-module').eq(0).siblings().hide();
-        $('.service-module').eq(0).fadeIn();
       } else if (serviceType === "裸金属服务器") {
         $("#serviceDesc h3").text("裸金属服务器");
         $("#serviceDesc p:eq(0)").text(
@@ -72,9 +66,6 @@ $(function () {
           "src",
           "https://picsum.photos/id/160/600/400"
         );
-        // 显示对应服务模块
-        $('.service-module').eq(2).siblings().hide();
-        $('.service-module').eq(1).fadeIn(400);
       } else if (serviceType === "GPU云服务器") {
         $("#serviceDesc h3").text("GPU云服务器");
         $("#serviceDesc p:eq(0)").text(
@@ -87,9 +78,6 @@ $(function () {
           "src",
           "https://picsum.photos/id/180/600/400"
         );
-        // 显示对应服务模块
-        $('.service-module').eq(2).siblings().hide();
-        $('.service-module').eq(2).fadeIn(400);
       }
       // 再淡入
       setTimeout(() => {

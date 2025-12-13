@@ -1,0 +1,87 @@
+/* 导航条（复刻cnfcloud） */
+#cnfNavMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-cnf {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s, padding 0.3s;
+}
+.navbar-cnf.scrolled {
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+}
+.logo-cnf {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-cnf img {
+  height: 36px;
+}
+.logo-nvidia {
+  height: 20px;
+  margin-left: 8px;
+}
+.nav-link-cnf {
+  color: #333;
+  font-size: 14px;
+  margin: 0 12px;
+  padding: 8px 0 !important;
+  position: relative;
+}
+.nav-link-cnf:hover {
+  color: #0066cc;
+}
+.nav-link-cnf::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0066cc;
+  transition: width 0.3s;
+}
+.nav-link-cnf:hover::after {
+  width: 100%;
+}
+.dropdown {
+  margin-top: -2px;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.nav-right-cnf {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.lang-switch-cnf {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.lang-btn-cnf {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.lang-btn-cnf.active {
+  border-radius: 40px;
+  background-color: #0066cc;
+  color: #fff;
+}
+.workbench-btn-cnf {
+  padding: 5px 18px;
+  font-size: 13px;
+  background-color: #0066cc;
+  border-radius: 20px;
+}
