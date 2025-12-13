@@ -16,8 +16,10 @@ $(function () {
   // 左侧列表项hover切换右侧媒体
   $(".solution-item").hover(function () {
     const mediaSrc = $(this).data("media");
-    $("#currentMedia").attr("src", mediaSrc);
+    // $(".currentMedia").attr("src", mediaSrc);
     $(this).find('> h3').css('color', '#0066cc');
+    const index = $(this).index();
+    $(".currentMedia").eq(index).show().siblings().hide()
   });
   // 鼠标离开时恢复
   $(".solution-item").mouseleave(function () {

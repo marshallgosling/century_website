@@ -347,7 +347,11 @@
         <!-- 左侧列表 -->
         <div class="left-list">
           <!-- 列表项1 -->
-          <div class="solution-item fade-in" style="transition-delay: 0.2s">
+          <div
+            class="solution-item fade-in"
+            style="transition-delay: 0.2s"
+            data-media="./video/video_solution_1.mp4"
+          >
             <h3>视觉特效与渲染</h3>
             <p>
               高效、精准的多模态数据标注与资产管理系统
@@ -355,7 +359,11 @@
             </p>
           </div>
           <!-- 列表项2 -->
-          <div class="solution-item fade-in" style="transition-delay: 0.3s">
+          <div
+            class="solution-item fade-in"
+            style="transition-delay: 0.3s"
+            data-media="./video/video_solution_2.mp4"
+          >
             <h3>推理服务</h3>
             <p>
               一站式AI模型微调和部署平台，支持多种框架与算法，包含69种主流模型对应30种场景能力，大幅简化模型选择和优化流程
@@ -384,16 +392,26 @@
             </p>
           </div>
         </div>
-
         <!-- 右侧媒体展示区 -->
         <div class="right-media fade-in">
-          <video id="currentMedia" autoplay loop playsinline>
-            <source src="./video/video_solution_1" type="video/mp4" />
+          <video class="currentMedia" autoplay loop playsinline>
+            <source src="./video/video_solution_1.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放
+          </video>
+          <video class="currentMedia" autoplay loop playsinline>
+            <source src="./video/video_solution_2.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放
+          </video>
+          <video class="currentMedia" autoplay loop playsinline>
+            <source src="./video/video_solution_1.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放
+          </video>
+          <video class="currentMedia" autoplay loop playsinline>
+            <source src="./video/video_solution_2.mp4" type="video/mp4" />
             您的浏览器不支持视频播放
           </video>
         </div>
       </div>
-
       <!-- 手风琴模块 -->
       <div class="bottom-title fade-in" style="transition-delay: 0.7s">
         <h4>强化重点行业领域“连接”+“智算”的基础能力建设</h4>
