@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>世纪利通 - 全栈AI算力解决方案</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <!-- 依赖引入 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -110,8 +111,12 @@
 
           <div class="nav-right-cnf ms-lg-5">
             <div class="lang-switch-cnf">
-              <div class="lang-btn-cnf active" data-lang="zh">中</div>
-              <div class="lang-btn-cnf" data-lang="en">EN</div>
+              <a class="lang-btn-cnf active" href="./index.html" data-lang="zh"
+                >中</a
+              >
+              <a class="lang-btn-cnf" href="./indexEN.html" data-lang="en"
+                >EN</a
+              >
             </div>
             <button class="btn btn-primary workbench-btn-cnf">工作台</button>
           </div>
@@ -121,18 +126,18 @@
 
     <!-- 全屏视频模块 -->
     <section id="video" class="video-full">
-      <video class="video-player" autoplay muted loop playsinline>
-        <source src="your-video.mp4" type="video/mp4" />
+      <video class="video-player" autoplay loop playsinline>
+        <source src="./video/introduce.mp4" type="video/mp4" />
         您的浏览器不支持视频播放
       </video>
       <div class="video-overlay"></div>
-      <div class="video-content">
+      <!-- <div class="video-content">
         <h1>用算力赋能未来</h1>
         <p>世纪利通 · 全栈式AI算力解决方案</p>
         <div class="video-play-btn">
           <i class="bi bi-play-fill fs-2"></i>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- 关于世纪利通模块（全屏+linkwise动画） -->
@@ -232,13 +237,11 @@
             <button class="btn">立即咨询 →</button>
           </div>
           <div class="service-media">
-            <video class="video-player" autoplay muted loop playsinline>
-              <source src="your-video.mp4" type="video/mp4" />
-              您的浏览器不支持视频播放
-            </video>
-            <div class="video-play-btn">
-              <i class="bi bi-play-fill fs-2"></i>
-            </div>
+            <img
+              src="./img/01_modulApi.jpg"
+              alt="GPU云服务器"
+              id="serviceImg"
+            />
           </div>
         </div>
 
@@ -344,11 +347,7 @@
         <!-- 左侧列表 -->
         <div class="left-list">
           <!-- 列表项1 -->
-          <div
-            class="solution-item fade-in"
-            style="transition-delay: 0.2s"
-            data-media="https://picsum.photos/id/180/800/500"
-          >
+          <div class="solution-item fade-in" style="transition-delay: 0.2s">
             <h3>视觉特效与渲染</h3>
             <p>
               高效、精准的多模态数据标注与资产管理系统
@@ -356,11 +355,7 @@
             </p>
           </div>
           <!-- 列表项2 -->
-          <div
-            class="solution-item fade-in"
-            style="transition-delay: 0.3s"
-            data-media="https://picsum.photos/id/119/800/500"
-          >
+          <div class="solution-item fade-in" style="transition-delay: 0.3s">
             <h3>推理服务</h3>
             <p>
               一站式AI模型微调和部署平台，支持多种框架与算法，包含69种主流模型对应30种场景能力，大幅简化模型选择和优化流程
@@ -391,12 +386,11 @@
         </div>
 
         <!-- 右侧媒体展示区 -->
-        <div class="right-media fade-in" style="transition-delay: 0.6s">
-          <img
-            src="https://picsum.photos/id/180/800/500"
-            alt="解决方案展示"
-            id="currentMedia"
-          />
+        <div class="right-media fade-in">
+          <video id="currentMedia" autoplay loop playsinline>
+            <source src="./video/video_solution_1" type="video/mp4" />
+            您的浏览器不支持视频播放
+          </video>
         </div>
       </div>
 
@@ -409,7 +403,7 @@
         <!-- 第一张：生物医疗（默认展开，圆角生效） -->
         <div class="accordion-item active">
           <div class="accordion-img-wrap">
-            <img src="https://picsum.photos/id/237/1600/900" alt="生物医疗" />
+            <img src="./img/application_01.jpg" alt="生物医疗" />
           </div>
           <div class="content">
             <h3>生物医疗</h3>
@@ -427,7 +421,7 @@
         <!-- 第二张：高端制造 -->
         <div class="accordion-item">
           <div class="accordion-img-wrap">
-            <img src="https://picsum.photos/id/160/1600/900" alt="高端制造" />
+            <img src="./img/application_02.jpg" alt="高端制造" />
           </div>
           <div class="content">
             <h3>高端制造</h3>
@@ -443,7 +437,7 @@
         <!-- 第三张：高校教育（展开后圆角生效） -->
         <div class="accordion-item" style="border-radius: 12px">
           <div class="accordion-img-wrap">
-            <img src="https://picsum.photos/id/200/1600/900" alt="高校教育" />
+            <img src="./img/application_03.jpg" alt="高校教育" />
           </div>
           <div class="content">
             <h3>高校教育</h3>

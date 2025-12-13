@@ -52,7 +52,7 @@ $(function () {
         );
         $("#serviceImg").attr(
           "src",
-          "https://picsum.photos/id/119/600/400"
+          "./img/01_modulApi.jpg"
         );
       } else if (serviceType === "裸金属服务器") {
         $("#serviceDesc h3").text("裸金属服务器");
@@ -64,7 +64,7 @@ $(function () {
         );
         $("#serviceImg").attr(
           "src",
-          "https://picsum.photos/id/160/600/400"
+          "./img/02_metalServer.jpg"
         );
       } else if (serviceType === "GPU云服务器") {
         $("#serviceDesc h3").text("GPU云服务器");
@@ -76,7 +76,7 @@ $(function () {
         );
         $("#serviceImg").attr(
           "src",
-          "https://picsum.photos/id/180/600/400"
+          "./img/03_gpuServer.jpg"
         );
       }
       // 再淡入

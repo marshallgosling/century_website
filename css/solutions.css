@@ -25,7 +25,7 @@
 .content-wrap {
   display: flex;
   gap: 40px;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 .left-list {

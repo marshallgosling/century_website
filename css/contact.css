@@ -1,8 +1,9 @@
 /* 联系我们模块（linkwise风格） */
 .contact-linkwise {
   background-color: #f7f8fa;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   /* border: 1px solid red; */
 }
 .contact-title h2 {
@@ -26,6 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid #000; */
 }
 .contact-text .item-name {
   display: flex;
@@ -47,8 +49,9 @@
   font-weight: 600;
   margin-bottom: 1px;
 }
-.contact-text p {
+.contact-text > p {
+  /* border: 1px solid red; */
   font-size: 14px;
   color: #666;
-  margin: 0;
+  margin-left: 15px;
 }
