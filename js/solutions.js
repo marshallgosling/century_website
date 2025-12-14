@@ -1,7 +1,7 @@
 $(function () {
   // 默认选中第一个
   $(".solution-item").find('> h3').eq(0).css('color', '#0066cc');
-  $("#currentMedia").eq(0).show().siblings().hide()
+  $(".currentMedia1").show().siblings().hide()
   // 滚动触发动效
   $(window).scroll(function () {
     $(".fade-in").each(function () {
@@ -19,11 +19,17 @@ $(function () {
     const mediaSrc = $(this).data("media");
     // $(".currentMedia").attr("src", mediaSrc);
     $(this).find('> h3').css('color', '#0066cc');
-    const index = $(this).index();
-    $("#currentMedia").eq(index).show().siblings().hide()
+
   });
   // 鼠标离开时恢复
   $(".solution-item").mouseleave(function () {
     $(this).find('> h3').css('color', '#000');
+  });
+  // 鼠标hover时切换右侧媒体
+  $("#solution-item1").hover(function () {
+    $(".currentMedia1").show().siblings().hide()
+  });
+  $("#solution-item2").hover(function () {
+    $(".currentMedia2").show().siblings().hide()
   });
 })
