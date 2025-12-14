@@ -35,7 +35,9 @@
       <div class="d-flex w-100 align-items-center">
         <!-- Logo区域 -->
         <div class="logo-cnf" style="margin-right: 100px">
-          <img src="./img/logo.png" alt="世纪利通" />
+          <a href="https://www.century-lt.com/" target="_blank">
+            <img src="./img/logo.png" alt="世纪利通" />
+          </a>
         </div>
 
         <!-- 移动端折叠按钮 -->
@@ -57,7 +59,7 @@
             <li class="nav-item">
               <a class="nav-link nav-link-cnf" href="#about">关于我们</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" style="font-size: 14px">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -79,7 +81,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" style="font-size: 14px">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -118,7 +120,12 @@
                 >EN</a
               >
             </div>
-            <button class="btn btn-primary workbench-btn-cnf">工作台</button>
+            <a
+              class="btn btn-primary workbench-btn-cnf"
+              href="https://www.centurylt.co/console"
+              target="_blank"
+              >工作台</a
+            >
           </div>
         </div>
       </div>
@@ -126,7 +133,7 @@
 
     <!-- 全屏视频模块 -->
     <section id="video" class="video-full">
-      <video class="video-player" autoplay loop playsinline>
+      <video class="video-player" id="introduceVideo" autoplay muted loop playsinline>
         <source src="./video/introduce.mp4" type="video/mp4" />
         您的浏览器不支持视频播放
       </video>
@@ -176,7 +183,9 @@
           <p class="about-map-text1">科创型数字新基建企业</p>
           <p class="about-map-text2">以中国长三角为中心</p>
           <p class="about-map-text3">
-            构建全球协同的智能化计算网络<br /><br />赋能企业无缝进入高效算力发展<br /><br />助力各类大型公司高速业务发展
+            <p>构建全球协同的智能化计算网络</p>
+            <p style="margin-top: -10px;">赋能企业无缝进入高效算力发展</p>
+            <p style="margin-top: -10px;">助力各类大型公司高速业务发展</p>
           </p>
         </div>
         <div class="about-map-img">
@@ -189,9 +198,9 @@
         style="transition-delay: 0.9s"
       >
         <div class="world-map">
-          <img src="./img/about3.png" alt="世界地图" />
+          <img src="./img/about3.jpg" alt="世界地图" />
         </div>
-        <div class="enterprise-text">
+        <div class="enterprise-text" style="margin-left: -400px;">
           <h4>企业愿景</h4>
           <p>全球最优的AI服务提供商之一</p>
           <h4>经营理念</h4>
@@ -394,19 +403,19 @@
         </div>
         <!-- 右侧媒体展示区 -->
         <div class="right-media fade-in">
-          <video class="currentMedia" autoplay loop playsinline>
+          <video id="currentMedia" autoplay muted loop playsinline>
             <source src="./video/video_solution_1.mp4" type="video/mp4" />
             您的浏览器不支持视频播放
           </video>
-          <video class="currentMedia" autoplay loop playsinline>
+          <video id="currentMedia" autoplay muted loop playsinline>
             <source src="./video/video_solution_2.mp4" type="video/mp4" />
             您的浏览器不支持视频播放
           </video>
-          <video class="currentMedia" autoplay loop playsinline>
+          <video id="currentMedia" autoplay loop playsinline>
             <source src="./video/video_solution_1.mp4" type="video/mp4" />
             您的浏览器不支持视频播放
           </video>
-          <video class="currentMedia" autoplay loop playsinline>
+          <video id="currentMedia" autoplay loop playsinline>
             <source src="./video/video_solution_2.mp4" type="video/mp4" />
             您的浏览器不支持视频播放
           </video>
@@ -556,7 +565,7 @@
       </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/naverbar.js"></script>
     <script src="./js/service.js"></script>
     <script src="./js/solutions.js"></script>
     <script src="./js/video.js"></script>

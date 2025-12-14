@@ -1,7 +1,7 @@
 /* 关于世纪利通模块（全屏+linkwise动画） */
 .about-full {
   background-color: #fff;
-  margin-top: 200px;
+  margin-top: 50px;
   /* padding: 100px 0; */
 }
 .about-title {
@@ -19,12 +19,13 @@
   color: #666;
 }
 .about-map {
+  /* border: 1px solid red; */
   width: 100%;
   height: 400px;
   background-color: #12232d;
   color: #fff;
-  padding: 50px;
-  margin: 50px auto 0 auto;
+  /* padding: 0 50px; */
+  margin-top: 50px;
   /* max-width: 1200px; */
   display: flex;
   justify-content: space-around;
@@ -44,11 +45,13 @@
   margin-top: 20px;
 }
 .about-map-img {
+  /* flex-grow  flex-shrink flex-basis*/
   flex: 0 0 250px;
 }
 .about-map-img img {
-  width: 100%;
+  height: 390px;
 }
+/* about3 */
 .enterprise-info {
   height: 400px;
   width: 100%;
@@ -59,7 +62,7 @@
   /* border: 1px solid red; */
 }
 .world-map {
-  flex: 0 0 400px;
+  flex: 0 0 700px;
 }
 .world-map img {
   width: 100%;

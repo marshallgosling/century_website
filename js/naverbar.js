@@ -1,5 +1,4 @@
 $(function () {
-
   // 导航条滚动样式变化
   $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
