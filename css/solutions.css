@@ -29,10 +29,13 @@
   flex-wrap: wrap;
 }
 .left-list {
-  flex: 1 1 400px;
+  flex: 4;
 }
 .right-media {
-  flex: 1 1 500px;
+  flex: 6;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex: 1 1 500px; */
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

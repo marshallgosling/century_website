@@ -59,6 +59,9 @@
 .nav-item {
   margin-right: 20px;
 }
+.nav-item .dropdown-menu .dropdown-item {
+  margin-bottom: 10px;
+}
 .nav-right-cnf {
   display: flex;
   align-items: center;

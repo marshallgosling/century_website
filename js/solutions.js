@@ -1,7 +1,7 @@
 $(function () {
   // 默认选中第一个
   $(".solution-item").find('> h3').eq(0).css('color', '#0066cc');
-  $(".currentMedia").eq(0).show().siblings().hide()
+  $("#currentMedia").eq(0).show().siblings().hide()
   // 滚动触发动效
   $(window).scroll(function () {
     $(".fade-in").each(function () {
@@ -20,7 +20,7 @@ $(function () {
     // $(".currentMedia").attr("src", mediaSrc);
     $(this).find('> h3').css('color', '#0066cc');
     const index = $(this).index();
-    $(".currentMedia").eq(index).show().siblings().hide()
+    $("#currentMedia").eq(index).show().siblings().hide()
   });
   // 鼠标离开时恢复
   $(".solution-item").mouseleave(function () {
