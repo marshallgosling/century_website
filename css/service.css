@@ -93,6 +93,8 @@
 
 /* 服务内容区域 + 淡入缩放动效 */
 .service-content {
+  margin: 0 auto;
+  max-width: 1100px;
   display: flex;
   background-color: #fff;
   border-radius: 8px;
