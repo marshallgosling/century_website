@@ -23,112 +23,14 @@
     <link rel="stylesheet" href="./css/solutions.css" />
     <link rel="stylesheet" href="./css/accordion.css" />
     <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style></style>
   </head>
   <body>
-    <!-- 导航条（复刻cnfcloud） -->
-    <nav class="navbar navbar-expand-lg navbar-cnf">
-      <div class="d-flex w-100 align-items-center">
-        <!-- Logo区域 -->
-        <div class="logo-cnf" style="margin-right: 100px">
-          <a href="https://www.century-lt.com/" target="_blank">
-            <img src="./img/logo.png" alt="世纪利通" />
-          </a>
-        </div>
-
-        <!-- 移动端折叠按钮 -->
-        <button
-          class="navbar-toggler ms-auto"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#cnfNavMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- 导航菜单+右侧区域 -->
-        <div class="collapse navbar-collapse ms-auto" id="cnfNavMenu">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="#video">首页</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="#about">关于我们</a>
-            </li>
-            <li class="nav-item dropdown" style="font-size: 14px">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#service"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                我们的产品
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#service">模型API服务</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#service">裸金属服务器</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#service">GPU云服务器</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown" style="font-size: 14px">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#solution"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                解决方案
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#solution">视觉特效与渲染</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#solution">推理服务</a>
-                </li>
- 
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="#price">价格</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="#contact">联系我们</a>
-            </li>
-          </ul>
-
-          <div class="nav-right-cnf ms-lg-5">
-            <div class="lang-switch-cnf">
-              <a class="lang-btn-cnf active" href="./index.html" data-lang="zh"
-                >中</a
-              >
-              <a class="lang-btn-cnf" href="./indexEN.html" data-lang="en"
-                >EN</a
-              >
-            </div>
-            <a
-              class="btn btn-primary workbench-btn-cnf"
-              href="https://www.centurylt.co/console"
-              target="_blank"
-              >工作台</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
-
+    <!-- 导航栏模块 -->
+    <section id="navbar"></section>
     <!-- 全屏视频模块 -->
     <section id="video" class="video-full">
       <video class="video-player" id="introduceVideo" autoplay muted playsinline>
@@ -492,51 +394,16 @@
         </div>
       </div>
     </section>
+    <!-- 底部模块 -->
+     <section id="footer"></section>
 
-    <!-- 尾部模块 -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- 左侧品牌区域 -->
-        <div class="footer-brand">
-          <div class="logo-group">
-            <!-- 世纪利通Logo -->
-            <img src="./img/logo_white.png" alt="世纪利通logo" />
-          </div>
-          <p class="footer-desc">
-            世纪利通是一家专业的云服务提供商，提供业界超快、超灵活的基础设施，及大规模GPU云服务。
-          </p>
-          <div class="footer-contact">
-            <p>上海市松江区鼎源路618弄1号29幢2层A222室 &nbsp;&nbsp;&nbsp;  021-50771320</p>
-          </div>
-          <div class="footer-contact">
-            <p>备案号：<a href="https://beian.miit.gov.cn/">沪ICP备2023030709号</a></p>
-          </div>		  
-		           
-        </div>
-
-        <!-- 右侧导航区域 -->
-        <div class="footer-nav">
-           <ul>
-            <li><a href="#">产品价格</a></li>
-            <li><a href="#about">了解我们</a></li>
-            <li><a href="#contact">联系我们</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-nav">
-           <ul>
-            <li><a href="#service">模型API服务</a></li>
-            <li><a href="#service">裸金属服务器</a></li>
-			      <li><a href="#service">GPU云服务器</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./js/naverbar.js"></script>
     <script src="./js/service.js"></script>
     <script src="./js/solutions.js"></script>
     <script src="./js/video.js"></script>
     <script src="./js/accordion.js"></script>
+    <script>
+      $('#navbar').load('navbar.html');
+      $('#footer').load('footer.html');
+    </script>
   </body>
 </html>
