@@ -70,3 +70,20 @@
 .footer-nav a:hover {
   color: #fff;
 }
+@media (max-width: 991.98px) {
+  .footer-top {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .footer-bottom {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-brand,
+  .footer-nav {
+    flex: 1 1 auto;
+    margin-top: -20px;
+  }
+}

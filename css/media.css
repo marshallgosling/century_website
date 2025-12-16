@@ -38,16 +38,6 @@
   .contact-container {
     padding: 0 20px;
   }
-  .footer-top {
-    flex-direction: column;
-    padding: 0 20px;
-  }
-  .footer-bottom {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
 }
 /* 响应式适配 - 小屏仍保持水平（可滚动） */
 @media (max-width: 768px) {

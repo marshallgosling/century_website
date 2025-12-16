@@ -173,6 +173,11 @@
           $(".navbar-nav").show();
         }
       });
+      let WIDTH = $(window).width();
+      if (WIDTH < 992) {
+        $(".navbar-nav").hide();
+        $(".dropdown-menu").show().css({ border: "none" });
+      }
     </script>
   </body>
 </html>
