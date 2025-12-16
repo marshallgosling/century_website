@@ -54,11 +54,14 @@
   width: 100%;
 }
 /* .dropdown {
-  margin-top: -2px;
+  border: 1px solid #000;
 } */
 .nav-item {
   margin-right: 20px;
 }
+/* .nav-item .dropdown-menu {
+  border: 1px solid red;
+} */
 .nav-item .dropdown-menu .dropdown-item {
   margin-bottom: 10px;
 }

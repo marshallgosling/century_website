@@ -24,7 +24,8 @@
   <body>
     <!-- 导航条（复刻cnfcloud） -->
     <nav class="navbar navbar-expand-lg navbar-cnf">
-      <div class="d-flex w-100 align-items-center">
+      <div class="container-fluid">
+        <!-- 用container-fluid替代原有的d-flex w-100 -->
         <!-- Logo区域 -->
         <div class="logo-cnf" style="margin-right: 100px">
           <a href="https://www.century-lt.com/" target="_blank">
@@ -34,17 +35,20 @@
 
         <!-- 移动端折叠按钮 -->
         <button
-          class="navbar-toggler ms-auto"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#cnfNavMenu"
+          aria-controls="cnfNavMenu"
+          aria-expanded="false"
+          aria-label="切换导航"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- 导航菜单+右侧区域 -->
         <div class="collapse navbar-collapse ms-auto" id="cnfNavMenu">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link nav-link-cnf" href="./index.html">首页</a>
             </li>
@@ -63,7 +67,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./product_API.html">模型API服务</a>
+                  <a class="dropdown-item" href="./product_API.html"
+                    >模型API服务</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="./product_metalServer.html"
@@ -71,7 +77,9 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./product_GPUserver.html">GPU云服务器</a>
+                  <a class="dropdown-item" href="./product_GPUserver.html"
+                    >GPU云服务器</a
+                  >
                 </li>
               </ul>
             </li>
@@ -87,13 +95,19 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./solution_rendor.html">视觉特效与渲染</a>
+                  <a class="dropdown-item" href="./solution_rendor.html"
+                    >视觉特效与渲染</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./solution_inference.html">推理服务</a>
+                  <a class="dropdown-item" href="./solution_inference.html"
+                    >推理服务</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./solution_AIpower.html">AI算力</a>
+                  <a class="dropdown-item" href="./solution_AIpower.html"
+                    >AI算力</a
+                  >
                 </li>
               </ul>
             </li>
@@ -127,7 +141,7 @@
     <!-- <script src="./js/navbar.js"></script> -->
     <script>
       // css只显示属于其的二级导航
-      $(".dropdown-toggle").hover(function () {
+      $(".dropdown-toggle").mouseenter(function () {
         $(this).next(".dropdown-menu").stop(true, true).delay(200).fadeIn();
         $(this)
           .parents(".dropdown")
@@ -140,7 +154,7 @@
       $(window).scroll(function () {
         $(".dropdown-menu").stop(true, true).delay(200).fadeOut();
       });
-      $(".dropdown-menu").mouseleave(function () {
+      $(".dropdown").mouseleave(function () {
         $(".dropdown-menu").hide();
       });
     </script>
