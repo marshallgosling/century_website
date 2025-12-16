@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>世纪利通 - 全栈AI算力解决方案</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!-- 依赖引入 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/video.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <link rel="stylesheet" href="./css/solutions.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* 淡入动画样式 */
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 导航栏模块 -->
+    <section id="navbar"></section>
+    <!-- 图片模块 -->
+    <section id="video" class="video-full" style="height: 500px;">
+      <img src="./img/about_top.png" alt="顶部图片" class="video-background"></img>
+      <div class="video-overlay"></div>
+      <div class="video-content">
+        <h3>世纪利通</h3>
+        <p>我们是一个不断壮大的团队，</p>
+        <p>又聪明、真诚、负责的人组成，</p>
+        <p>重视解决问题的不同观点和方法。</p>
+      </div>
+    </section>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>GPU云服务器</h3>
+        <div class="line"></div>
+        <p>
+          世纪利通正在全球范围内提供GPU云服务器，可提供全球化的算力资源调度与管理，满足各类企业在全球各地的AI训练、推理与数据跨境需求。
+        </p>
+        <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
+        <button class="btn">立即咨询 →</button>
+      </div>
+      <div class="service-media">
+        <img
+          src="./img/01_modulApi.jpg"
+          alt="GPU云服务器"
+          id="serviceImg"
+        />
+      </div>
+    </div>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-media">
+        <img
+          src="./img/01_modulApi.jpg"
+          alt="GPU云服务器"
+          id="serviceImg"
+        />
+      </div>
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>GPU云服务器</h3>
+        <div class="line"></div>
+        <p>
+          世纪利通正在全球范围内提供GPU云服务器，可提供全球化的算力资源调度与管理，满足各类企业在全球各地的AI训练、推理与数据跨境需求。
+        </p>
+        <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
+        <button class="btn">立即咨询 →</button>
+      </div>
+    </div>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>GPU云服务器</h3>
+        <div class="line"></div>
+        <p>
+          世纪利通正在全球范围内提供GPU云服务器，可提供全球化的算力资源调度与管理，满足各类企业在全球各地的AI训练、推理与数据跨境需求。
+        </p>
+        <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
+        <button class="btn">立即咨询 →</button>
+      </div>
+      <div class="service-media">
+        <img
+          src="./img/01_modulApi.jpg"
+          alt="GPU云服务器"
+          id="serviceImg"
+        />
+      </div>
+    </div>
+    <!-- #0f1533 -->
+     <div id="text-module">世纪利通让工作效率更高</div>
+    <!-- 联系我们 -->
+    <div id="contact" style="margin-top: 80px;"></div>
+
+    <!-- 底部模块 -->
+    <section id="footer"></section>
+    <!-- 动效 -->
+    <script>
+      $("#navbar").load("navbar.html");
+      $("#footer").load("footer.html");
+      $("#contact").load("contact.html");
+
+      // 淡入动画逻辑
+      document.addEventListener('DOMContentLoaded', function() {
+        // 检查元素是否在视口中
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+        };
+
+        // 创建交叉观察器实例
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target); // 只触发一次
+            }
+          });
+        }, observerOptions);
+
+        // 观察所有带有fade-in-section类的元素
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
+</html>
