@@ -32,15 +32,17 @@
     <!-- 导航栏模块 -->
     <section id="navbar"></section>
     <!-- 全屏视频模块 -->
-    <section id="video" class="video-full">
+    <section id="video" class="video-full" style="height: 500px;">
       <video class="video-player" id="introduceVideo" autoplay muted playsinline>
         <source src="./video/introduce.mp4" type="video/mp4" />
         您的浏览器不支持视频播放
       </video>
       <div class="video-overlay"></div>
       <div class="video-content">
-        <h1>世纪利通 · 用算力赋能未来</h1>
-        <p>全栈式AI算力解决方案</p>
+        <h3>世纪利通</h3>
+        <p>我们是一个不断壮大的团队，</p>
+        <p>又聪明、真诚、负责的人组成，</p>
+        <p>重视解决问题的不同观点和方法。</p>
       </div>
     </section>
 
@@ -348,62 +350,19 @@
     </section>
 
     <!-- 联系我们模块（带滚动渐入动效） -->
-    <section id="contact" class="contact-linkwise fade-in-up">
-      <div class="container">
-        <!-- 居中标题 -->
-        <div class="section-title contact-title">
-          <h2>联系<span style="color: #000">我们</span></h2>
-          <p>
-            如果您有任何需求或疑问，欢迎通过以下方式与我们联系，我们将尽快为您提供专业的服务支持。
-          </p>
-        </div>
-        <div class="contact-detail">
-          <div class="contact-item">
-            <div class="contact-text">
-              <div class="item-name">
-                <div class="contact-icon">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <h4>咨询热线</h4>
-              </div>
-              <p>86-21-50771320</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-text">
-              <div class="item-name">
-                <div class="contact-icon">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <h4>电子邮箱</h4>
-              </div>
-              <p>service@centlt.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-text">
-              <div class="item-name">
-                <div class="contact-icon">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <h4>公司地址</h4>
-              </div>
-              <p>上海市松江区鼎源路618弄1号29幢2层A222室</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="contact"></section>
     <!-- 底部模块 -->
-     <section id="footer"></section>
+    <section id="footer"></section>
 
     <script src="./js/service.js"></script>
     <script src="./js/solutions.js"></script>
     <script src="./js/video.js"></script>
     <script src="./js/accordion.js"></script>
+    <script src="./js/contact.js"></script>
     <script>
       $('#navbar').load('navbar.html');
       $('#footer').load('footer.html');
+      $('#contact').load('contact.html');
     </script>
   </body>
 </html>
