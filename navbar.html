@@ -136,8 +136,11 @@
           .delay(200)
           .fadeOut();
       });
-      $(".dropdown-toggle").mouseleave(function () {
-        $(".dropdown-menu").delay(200).fadeOut();
+      $(window).scroll(function () {
+        $(".dropdown-menu").stop(true, true).delay(200).fadeOut();
+      });
+      $(".dropdown-menu").mouseleave(function () {
+        $(".dropdown-menu").hide();
       });
     </script>
   </body>
