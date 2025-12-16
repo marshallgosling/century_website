@@ -55,7 +55,7 @@
             <li class="nav-item">
               <a class="nav-link nav-link-cnf" href="./about.html">关于我们</a>
             </li>
-            <li class="nav-item dropdown" style="font-size: 14px">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#service"
@@ -83,7 +83,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown" style="font-size: 14px">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#solution"
@@ -140,6 +140,14 @@
     </nav>
     <!-- <script src="./js/navbar.js"></script> -->
     <script>
+      // 如果navbar-toggler显示，那么navbar-nav隐藏
+      $(window).resize(function () {
+        if ($(".navbar-toggler").is(":visible")) {
+          $(".navbar-nav").hide();
+        } else {
+          $(".navbar-nav").show();
+        }
+      });
       // css只显示属于其的二级导航
       $(".dropdown-toggle").mouseenter(function () {
         $(this).next(".dropdown-menu").stop(true, true).delay(200).fadeIn();
@@ -156,6 +164,14 @@
       });
       $(".dropdown").mouseleave(function () {
         $(".dropdown-menu").hide();
+      });
+      // 点击navbar-toggler切换菜单隐藏显示
+      $(".navbar-toggler").click(function () {
+        if ($(".navbar-nav").is(":visible")) {
+          $(".navbar-nav").hide();
+        } else {
+          $(".navbar-nav").show();
+        }
       });
     </script>
   </body>
