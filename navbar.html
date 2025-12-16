@@ -97,7 +97,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="#price">价格</a>
+              <a class="nav-link nav-link-cnf" href="./price.html">价格</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-cnf" href="#contact">联系我们</a>
@@ -123,6 +123,22 @@
         </div>
       </div>
     </nav>
-    <script src="./js/naverbar.js"></script>
+    <!-- <script src="./js/navbar.js"></script> -->
+    <script>
+      // css只显示属于其的二级导航
+      $(".dropdown-toggle").hover(function () {
+        $(this).next(".dropdown-menu").stop(true, true).delay(200).fadeIn();
+        $(this)
+          .parents(".dropdown")
+          .siblings()
+          .find(".dropdown-menu")
+          .stop(true, true)
+          .delay(200)
+          .fadeOut();
+      });
+      $(".dropdown-toggle").mouseleave(function () {
+        $(".dropdown-menu").delay(200).fadeOut();
+      });
+    </script>
   </body>
 </html>
