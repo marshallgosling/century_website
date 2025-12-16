@@ -16,16 +16,26 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <style>
-      /* 淡入动画样式 */
       .fade-in-section {
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
       }
-      
       .fade-in-section.is-visible {
         opacity: 1;
         transform: translateY(0);
+      }
+
+      #text-module{
+        margin-top: 50px;
+        width: 100%;
+        height: 400px;
+        background-color: #0f1533;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#fff;
+        font-size: 30px;
       }
     </style>
   </head>
@@ -34,7 +44,7 @@
     <section id="navbar"></section>
     <!-- 图片模块 -->
     <section id="video" class="video-full" style="height: 500px;">
-      <img src="./img/banner_about.jpg" class="video-background"></img>
+      <img src="./img/about_top.png" alt="顶部图片" class="video-background"></img>
       <div class="video-overlay"></div>
       <div class="video-content">
         <h3>世纪利通</h3>
@@ -43,6 +53,63 @@
         <p>重视解决问题的不同观点和方法。</p>
       </div>
     </section>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>GPU云服务器</h3>
+        <div class="line"></div>
+        <p>
+          世纪利通正在全球范围内提供GPU云服务器，可提供全球化的算力资源调度与管理，满足各类企业在全球各地的AI训练、推理与数据跨境需求。
+        </p>
+        <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
+        <button class="btn">立即咨询 →</button>
+      </div>
+      <div class="service-media">
+        <img
+          src="./img/01_modulApi.jpg"
+          alt="GPU云服务器"
+          id="serviceImg"
+        />
+      </div>
+    </div>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-media">
+        <img
+          src="./img/01_modulApi.jpg"
+          alt="GPU云服务器"
+          id="serviceImg"
+        />
+      </div>
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>GPU云服务器</h3>
+        <div class="line"></div>
+        <p>
+          世纪利通正在全球范围内提供GPU云服务器，可提供全球化的算力资源调度与管理，满足各类企业在全球各地的AI训练、推理与数据跨境需求。
+        </p>
+        <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
+        <button class="btn">立即咨询 →</button>
+      </div>
+    </div>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>GPU云服务器</h3>
+        <div class="line"></div>
+        <p>
+          世纪利通正在全球范围内提供GPU云服务器，可提供全球化的算力资源调度与管理，满足各类企业在全球各地的AI训练、推理与数据跨境需求。
+        </p>
+        <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
+        <button class="btn">立即咨询 →</button>
+      </div>
+      <div class="service-media">
+        <img
+          src="./img/01_modulApi.jpg"
+          alt="GPU云服务器"
+          id="serviceImg"
+        />
+      </div>
+    </div>
     <!-- 服务模块 - 添加淡入动画类 -->
     <div class="service-module fade-in-section">
       <div class="container">
@@ -126,29 +193,8 @@
         </div>
       </div>
     </div>
-    <!-- 服务内容区域 - 添加淡入动画类 -->
-    <div class="service-content fade-in-section" style="margin-top: 80px;">
-      <div class="service-desc content-transition" id="serviceDesc">
-        <h3>GPU云服务器</h3>
-        <div class="line"></div>
-        <p>
-          世纪利通正在全球范围内提供GPU云服务器，可提供全球化的算力资源调度与管理，满足各类企业在全球各地的AI训练、推理与数据跨境需求。
-        </p>
-        <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
-        <button class="btn">立即咨询 →</button>
-      </div>
-      <div class="service-media">
-        <img
-          src="./img/01_modulApi.jpg"
-          alt="GPU云服务器"
-          id="serviceImg"
-        />
-      </div>
-    </div>
-    <!-- 公司组织架构 - 添加淡入动画类 -->
-    <div class="fade-in-section" style="margin-top: 80px;">
-      <img src="./img/oginational_structure.png" alt="公司组织架构" class="oginational-structure-img" style="width: 100%;" />
-    </div>
+    <!-- #0f1533 -->
+     <div id="text-module">世纪利通让工作效率更高</div>
     <!-- 联系我们 -->
     <div id="contact" style="margin-top: 80px;"></div>
 
