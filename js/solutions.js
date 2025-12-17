@@ -32,4 +32,14 @@ $(function () {
   $("#solution-item2").hover(function () {
     $(".currentMedia2").show().siblings().hide()
   });
+  // click跳转网页
+  $("#solution-item1").click(function () {
+    window.location.href = "./solution_rendor.html";
+  });
+  $("#solution-item2").click(function () {
+    window.location.href = "./solution_inference.html";
+  });
+  $("#solution-item3").click(function () {
+    window.location.href = "./solution_AIpower.html";
+  });
 })
