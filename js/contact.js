@@ -29,14 +29,26 @@ $(function () {
     // 提交按钮加载动画
     submitBtn.text("提交中...").prop("disabled", true);
 
-    // 模拟提交（实际项目中替换为接口请求）
-    setTimeout(() => {
-      alert("表单已提交，感谢您的留言！");
-      // 重置表单
-      $(this)[0].reset();
-      // 恢复按钮状态
-      submitBtn.text("确认提交").prop("disabled", false);
-    }, 1000);
+    $.ajax({
+      url: "https://console.century-lt.com/api/contactus", // 替换为实际的提交地址
+      method: "POST",
+      data: $(this).serialize(),
+      success: function (response) {
+        // 处理成功响应
+        $(this)[0].reset();
+        // 恢复按钮状态
+        submitBtn.text("确认提交").prop("disabled", false);
+      },
+      error: function () {
+        // 处理错误响应
+        alert("提交失败，请稍后重试。");
+        $(this)[0].reset();
+        // 恢复按钮状态
+        submitBtn.text("确认提交").prop("disabled", false);
+      }
+    
+    });
+
   });
 
   // 表单输入框焦点动画增强
