@@ -110,22 +110,22 @@
 
         <!-- 居中导航按钮（水平显示+单个高亮+动效） -->
         <div class="service-nav fade-in-up">
-          <div id="modelAPI" class="service-nav-item active">
+          <div id="modelAPI" class="service-nav-item active" id="service-nav-item1">
             <i class="bi bi-robot"></i>
             <span>模型API服务</span>
           </div>
-          <div id="bareMetal" class="service-nav-item">
+          <div id="bareMetal" class="service-nav-item" id="service-nav-item2">
             <i class="bi bi-server"></i>
             <span>裸金属服务器</span>
           </div>
-          <div id="gpuServer" class="service-nav-item">
+          <div id="gpuServer" class="service-nav-item" id="service-nav-item3">
             <i class="bi bi-cloud"></i>
             <span>GPU云服务器</span>
           </div>
         </div>
 
         <!-- 服务内容区域（带淡入缩放动效） -->
-        <div class="service-content scale-in">
+        <a class="service-content scale-in" id="service-content1" href="./product_API.html">
           <div class="service-desc content-transition" id="serviceDesc">
             <h3>模型API服务</h3>
             <div class="line"></div>
@@ -142,7 +142,43 @@
               id="serviceImg"
             />
           </div>
-        </div>
+        </a>
+        <a class="service-content scale-in" id="service-content2" href="./product_metalServer.html">
+          <div class="service-desc content-transition" id="serviceDesc">
+            <h3>裸金属服务器</h3>
+            <div class="line"></div>
+            <p>
+              我们提供高性能物理服务器租赁服务，摒弃虚拟化额外开销，以原生硬件性能释放极致算力，精准满足高负载 AI 计算场景的严苛需求。同时配套定制化配置、弹性扩容方案，搭配 7x24 小时专业运维保障，全方位支撑企业 AI 业务稳定高效运行。
+            </p>
+            <p>支持定制化配置、弹性扩容、7x24小时运维保障等服务</p>
+            <!-- <a class="btn" href="product_GPUServer.html">了解详情 →</a> -->
+          </div>
+          <div class="service-media">
+            <img
+              src="./img/02_metalServer.jpg"
+              alt="裸金属服务器"
+              id="serviceImg"
+            />
+          </div>
+        </a>
+        <a class="service-content scale-in" id="service-content3" href="./product_GPUServer.html">
+          <div class="service-desc content-transition" id="serviceDesc">
+            <h3>GPU云服务器</h3>
+            <div class="line"></div>
+            <p>
+              世纪利通推出全球化 GPU 云服务器服务，依托遍布全球的算力节点，可实现高效的全球化算力资源调度与智能管理。该服务能够精准匹配各类企业的多元需求，为企业在全球各地开展的 AI 模型训练、推理运算以及数据跨境处理等业务，提供稳定、高效的算力支撑。
+            </p>
+            <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
+            <!-- <a class="btn" href="product_GPUServer.html">了解详情 →</a> -->
+          </div>
+          <div class="service-media">
+            <img
+              src="./img/03_gpuServer.jpg"
+              alt="GPU云服务器"
+              id="serviceImg"
+            />
+          </div>
+        </a>
 
         <!-- 服务模块 -->
         <div class="service-module scale-in">
