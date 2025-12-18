@@ -32,6 +32,9 @@ $(function () {
   $("#solution-item2").hover(function () {
     $(".currentMedia2").show().siblings().hide()
   });
+   $("#solution-item3").hover(function () {
+    $(".currentMedia3").show().siblings().hide()
+  });
   // click跳转网页
   $("#solution-item1").click(function () {
     window.location.href = "./solution_rendor.html";
