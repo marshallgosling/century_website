@@ -33,14 +33,39 @@
     <section id="navbar"></section>
     <!-- 全屏视频模块 -->
     <section id="video" class="video-full" style="height: 500px;">
-      <video class="video-player" id="introduceVideo" autoplay muted playsinline>
-        <source src="../video/introduce.mp4" type="video/mp4" />
-        <source src="../video/introduce.webm" type="video/webm">
-        您的浏览器不支持视频播放
+      <!-- 视频容器：移除固定高度，改用CSS响应式 -->
+      <video 
+        class="video-player" 
+        id="introduceVideo"
+        autoplay        
+        muted 
+        preload="auto" 
+        playsinline 
+        webkit-playsinline 
+        x5-playsinline
+        x5-video-orientation="portraint"
+      >
+        <!-- 双格式兼容：MP4（主流）+ WebM（体积小） -->
+        <source src="../video/introduce.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+        <source src="../video/introduce.webm" type="video/webm; codecs=&quot;vp9, opus&quot;">
+        <!-- 终极降级：不支持video标签时显示 -->
+        <div class="video-fallback">
+          <h3>您的浏览器不支持视频播放</h3>
+          <p>
+            <a href="../video/introduce.mp4" download="世纪利通-算力解决方案.mp4">
+              点击下载视频查看（MP4格式）
+            </a>
+          </p>
+        </div>
       </video>
+
+      <!-- 叠加层+文字内容 -->
       <div class="video-overlay"></div>
       <div class="video-content">
         <h1>世纪利通 - 全栈AI算力解决方案</h1>
+        <!-- <p>赋能企业智能化转型，构建高效算力底座</p> -->
+        <button id="videoSoundBtn" class="video-btn">开启声音</button>
+        <button id="videoControlBtn" class="video-btn">暂停播放</button>
       </div>
     </section>
     <!-- 关于世纪利通模块（全屏+动画） -->
