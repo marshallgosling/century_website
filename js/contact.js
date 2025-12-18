@@ -3,17 +3,19 @@ $(function () {
   // 监听滚动事件，实现元素进入视口时的动画
   function checkScroll() {
     const contactSection = $(".contact-section");
-    if (!contactSection) return;
-    const sectionTop = contactSection.offset().top;
-    const sectionHeight = contactSection.outerHeight();
-    const windowHeight = $(window).height();
-    const scrollTop = $(window).scrollTop();
+    try {
+      const sectionTop = contactSection.offset().top;
+      const sectionHeight = contactSection.outerHeight();
+      const windowHeight = $(window).height();
+      const scrollTop = $(window).scrollTop();
 
-    // 当元素进入视口时添加动画类
-    if (scrollTop + windowHeight > sectionTop + sectionHeight / 4) {
-      contactSection.addClass("animate-in");
-      // 只执行一次
-      $(window).off("scroll", checkScroll);
+      // 当元素进入视口时添加动画类
+      if (scrollTop + windowHeight > sectionTop + sectionHeight / 4) {
+        contactSection.addClass("animate-in");
+        // 只执行一次
+        $(window).off("scroll", checkScroll);
+      }
+    } catch (e) {
     }
   }
 
