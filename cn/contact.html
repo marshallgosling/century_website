@@ -54,8 +54,8 @@
           <form id="contactForm">
             <div class="row">
               <div class="col-md-6">
-                <select class="form-control" name="consultType">
-                  <option value="0">咨询类型</option>
+                <select class="form-control" name="type" required>
+                  <option value="">咨询类型</option>
                   <option value="1">销售咨询</option>
                   <option value="2">方案咨询</option>
                   <option value="3">HR咨询</option>
@@ -76,7 +76,7 @@
                 <input
                   type="tel"
                   class="form-control"
-                  name="phone"
+                  name="mobile"
                   placeholder="您的电话（选填）"
                 />
               </div>
@@ -103,7 +103,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="region"
+                  name="nation"
                   placeholder="国家/地区"
                 />
               </div>
