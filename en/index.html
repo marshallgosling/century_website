@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>世纪利通 - 全栈AI算力解决方案</title>
+    <title>Century Litong - Full-stack AI Compute Solutions</title>
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <!-- 依赖引入 -->
     <link
@@ -29,17 +29,43 @@
     <style></style>
   </head>
   <body>
-    <!-- 导航栏模块 -->
+    <!-- Navigation -->
     <section id="navbar"></section>
     <!-- 全屏视频模块 -->
     <section id="video" class="video-full" style="height: 500px;">
-      <video class="video-player" id="introduceVideo" autoplay muted playsinline>
-        <source src="../video/introduce.mp4" type="video/mp4" />
-        您的浏览器不支持视频播放
+      <!-- 视频容器：移除固定高度，改用CSS响应式 -->
+      <video 
+        class="video-player" 
+        id="introduceVideo"
+        autoplay        
+        muted 
+        preload="auto" 
+        playsinline 
+        webkit-playsinline 
+        x5-playsinline
+        x5-video-orientation="portraint"
+      >
+        <!-- 双格式兼容：MP4（主流）+ WebM（体积小） -->
+        <source src="../video/introduce.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+        <source src="../video/introduce.webm" type="video/webm; codecs=&quot;vp9, opus&quot;">
+        <!-- 终极降级：不支持video标签时显示 -->
+        <div class="video-fallback">
+          <h3>您的浏览器不支持视频播放</h3>
+          <p>
+            <a href="../video/introduce.mp4" download="世纪利通-算力解决方案.mp4">
+              点击下载视频查看（MP4格式）
+            </a>
+          </p>
+        </div>
       </video>
+
+      <!-- 叠加层+文字内容 -->
       <div class="video-overlay"></div>
       <div class="video-content">
-        <h1>世纪利通 - 全栈AI算力解决方案</h1>
+        <h1>Century Litong - Full-stack AI Compute Solutions</h1>
+        <!-- <p>赋能企业智能化转型，构建高效算力底座</p> -->
+        <!-- <button id="videoSoundBtn" class="video-btn">开启声音</button> -->
+        <!-- <button id="videoControlBtn" class="video-btn">暂停播放</button> -->
       </div>
     </section>
     <!-- 关于世纪利通模块（全屏+动画） -->
@@ -47,7 +73,7 @@
       <section id="about" class="about-full">
         <div class="container">
           <h2 class="about-title animate-fade-up">
-            关于<span style="color: #000">世纪利通</span>
+            About <span style="color: #000">Century Litong</span>
             <p
               style="
                 font-size:24px;
@@ -56,7 +82,7 @@
                 font-weight: normal;
               "
             >
-              <br><br>专注于企业数据智能解决方案的服务商，推行数据市场全球化策略，积极布局多区域市场，持续推动产业AI化转型升级。  <br><br><br>
+              <br><br>A leading GPU cloud provider focused on enterprise AI solutions, expanding across regions and driving industry AI transformation.<br><br><br>
             </p>
           </h2>
           <div
@@ -71,16 +97,16 @@
 
       <div class="about-map animate-fade-up" style="transition-delay: 0.6s">
         <div class="about-map-text">
-          <p class="about-map-text1">科创型数字新基建企业</p>
-          <p class="about-map-text2">以中国长三角为中心</p>
+          <p class="about-map-text1">Innovative digital infrastructure company</p>
+          <p class="about-map-text2">Headquartered in the Yangtze River Delta, China</p>
           <p class="about-map-text3">
-            <p>构建全球协同的智能化计算网络</p>
-            <p style="margin-top: -10px;">赋能企业无缝进入高效算力发展</p>
-            <p style="margin-top: -10px;">助力各类大型公司高速业务发展</p>
+            <p>Building a globally coordinated intelligent compute network</p>
+            <p style="margin-top: -10px;">Enabling seamless access to efficient compute</p>
+            <p style="margin-top: -10px;">Supporting rapid business growth for enterprises</p>
           </p>
         </div>
         <div class="about-map-img">
-          <img src="../img/about2.png" alt="长三角地图" />
+          <img src="../img/about2.png" alt="" />
         </div>
       </div>
 
@@ -89,13 +115,13 @@
         style="transition-delay: 0.9s"
       >
         <div class="world-map">
-          <img src="../img/about3.jpg" alt="世界地图" />
+          <img src="../img/about3.jpg" alt="" />
         </div>
         <div class="enterprise-text" style="margin-left: -400px;">
-          <h4>企业愿景</h4>
-          <p>全球最优的AI服务提供商之一</p>
-          <h4>经营理念</h4>
-          <p>持续创新，持续学习，持续发展<br />稳定交付，挑战未来，突破自我</p>
+          <h4>Our Vision</h4>
+          <p>To be one of China's leading GPU cloud providers</p>
+          <h4>Principles</h4>
+          <p>Continuous innovation, continuous learning, continuous growth<br />Reliable delivery, embrace the future, push boundaries</p>
         </div>
       </div>
     </div>
@@ -104,33 +130,33 @@
       <div class="container">
         <!-- 居中标题（带滚动渐入动效） -->
         <div class="section-title fade-in-up">
-          <h2>产品<span style="color: #000">服务</span></h2>
-          <p>为企业提供全方位的AI智能服务，赋能企业数智化转型</p>
+          <h2>Products <span style="color: #000">& Services</span></h2>
+          <p>Providing end-to-end AI services to empower enterprise digital transformation</p>
         </div>
 
         <!-- 居中导航按钮（水平显示+单个高亮+动效） -->
         <div class="service-nav fade-in-up">
           <div id="modelAPI" class="service-nav-item active" id="service-nav-item1">
             <i class="bi bi-robot"></i>
-            <span>模型API服务</span>
+            <span>Model API Services</span>
           </div>
           <div id="bareMetal" class="service-nav-item" id="service-nav-item2">
             <i class="bi bi-server"></i>
-            <span>裸金属服务器</span>
+            <span>Bare Metal Servers</span>
           </div>
           <div id="gpuServer" class="service-nav-item" id="service-nav-item3">
             <i class="bi bi-cloud"></i>
-            <span>GPU云服务器</span>
+            <span>GPU Cloud Servers</span>
           </div>
         </div>
 
         <!-- 服务内容区域（带淡入缩放动效） -->
         <a class="service-content scale-in" id="service-content1" href="./product_API.html">
           <div class="service-desc content-transition" id="serviceDesc">
-            <h3>模型API服务</h3>
+            <h3>Model API Services</h3>
             <div class="line"></div>
             <p>
-              我们提供丰富多元的 AI 模型 API 接口，全面覆盖文本生成、图像识别、语音转换等核心能力，可助力企业快速集成至自有业务系统。同时，接口适配通用模型、行业定制模型、私有化部署模型等多种服务形态，满足不同企业的差异化算力需求与业务场景应用。
+              We provide a wide range of AI Model APIs covering text generation, image recognition, speech conversion and more, enabling fast integration into your systems. APIs support general, industry-customized, and private deployment models to meet diverse enterprise needs.
             </p>
             <p>包含通用模型、行业定制模型、私有化部署模型等服务形态</p>
             <!-- <a class="btn" href="product_GPUServer.html">了解详情 →</a> -->
@@ -145,10 +171,10 @@
         </a>
         <a class="service-content scale-in" id="service-content2" href="./product_metalServer.html">
           <div class="service-desc content-transition" id="serviceDesc">
-            <h3>裸金属服务器</h3>
+            <h3>Bare Metal Servers</h3>
             <div class="line"></div>
             <p>
-              我们提供高性能物理服务器租赁服务，摒弃虚拟化额外开销，以原生硬件性能释放极致算力，精准满足高负载 AI 计算场景的严苛需求。同时配套定制化配置、弹性扩容方案，搭配 7x24 小时专业运维保障，全方位支撑企业 AI 业务稳定高效运行。
+              We offer high-performance bare metal server rentals that remove virtualization overhead to deliver native hardware performance for demanding AI workloads. Custom configurations, elastic scaling, and 24/7 professional operations support ensure reliable AI operations.
             </p>
             <p>支持定制化配置、弹性扩容、7x24小时运维保障等服务</p>
             <!-- <a class="btn" href="product_GPUServer.html">了解详情 →</a> -->
@@ -163,10 +189,10 @@
         </a>
         <a class="service-content scale-in" id="service-content3" href="./product_GPUServer.html">
           <div class="service-desc content-transition" id="serviceDesc">
-            <h3>GPU云服务器</h3>
+            <h3>GPU Cloud Servers</h3>
             <div class="line"></div>
             <p>
-              世纪利通推出全球化 GPU 云服务器服务，依托遍布全球的算力节点，可实现高效的全球化算力资源调度与智能管理。该服务能够精准匹配各类企业的多元需求，为企业在全球各地开展的 AI 模型训练、推理运算以及数据跨境处理等业务，提供稳定、高效的算力支撑。
+              Century Litong's GPU cloud servers leverage distributed compute nodes to enable efficient global resource scheduling and intelligent management. They meet diverse enterprise needs for model training, inference, and cross-border data processing.
             </p>
             <p>主要包涵国际专线、全球数据与算力跨境等服务</p>
             <!-- <a class="btn" href="product_GPUServer.html">了解详情 →</a> -->
@@ -196,10 +222,9 @@
                     alt="高效设施" class="service-icon"></img>
                   </div>
                   <div class="service-content">
-                    <h4>高效设施</h4>
+                    <h4>High-performance Infrastructure</h4>
                     <p>
-                      世纪利通云专为每种工作负载提供最佳性能而打造。
-					  业界最广泛的高端NVIDIA GPUs是我们的基础。
+                      Built to deliver optimal performance for every workload, powered by industry-leading NVIDIA GPUs.
                     </p>
                   </div>
                 </div>
@@ -215,8 +240,8 @@
                     alt="最新定价" class="service-icon"></img>
                   </div>
                   <div class="service-content">
-                    <h4>最佳定价</h4>
-                    <p>我们为您提供配置方案的灵活性，并使用基于资源的定价。您只需在使用资源时为使用的资源付费。</p>
+                    <h4>Competitive Pricing</h4>
+                    <p>Flexible configurations and resource-based pricing — pay only for what you use.</p>
                   </div>
                 </div>
               </div>
@@ -235,9 +260,9 @@
                     alt="按需扩展" class="service-icon"></img>
                   </div>
                   <div class="service-content">
-                    <h4>按需扩展</h4>
+                    <h4>Elastic Scaling</h4>
                     <p>
-                      我们给予客户在几秒钟内扩展和缩减的自由和权力，严格的资源配额和等待GPU加速的时间已经成为过去。
+                      Scale up and down within seconds — no more long waits for GPU allocation.
                     </p>
                   </div>
                 </div>
@@ -253,9 +278,9 @@
                     alt="一流支持" class="service-icon"></img>
                   </div>
                   <div class="service-content">
-                    <h4>一流支持</h4>
+                    <h4>Premier Support</h4>
                     <p>
-                      我们的支持工程师团队尽可能快速高效地设置部署和扩展工作负载，用一流的支持帮助我们的客户取得成功。
+                      Our support team helps deploy and scale workloads quickly and reliably.
                     </p>
                   </div>
                 </div>
@@ -397,7 +422,7 @@
     <script src="../js/navbar.js"></script>
     <script src="../js/service.js"></script>
     <script src="../js/solutions.js"></script>
-    <script src="../js/video.js"></script>
+    <script src="../js/videobeifen.js"></script>
     <script src="../js/accordion.js"></script>
-    <script src="../js/contact.js"></script>
+    
 </html>

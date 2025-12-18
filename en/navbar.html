@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>世纪利通 - 全栈AI算力解决方案</title>
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
-    <!-- 依赖引入 -->
-    <link
-      href="../css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="../bootstrap-icons-1.13.1/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="../css/basic.css" />
-    <link rel="stylesheet" href="../css/naverbar.css" />
-    <link rel="stylesheet" href="../css/media.css" />
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <style></style>
-  </head>
-  <body>
-    <!-- 导航条（复刻cnfcloud） -->
+
+    <!-- 导航条 -->
     <nav class="navbar navbar-expand-lg navbar-cnf">
       <div class="container-fluid">
         <!-- 用container-fluid替代原有的d-flex w-100 -->
         <!-- Logo区域 -->
         <div class="logo-cnf" style="margin-right: 100px">
           <a href="./">
-            <img src="../img/logo.png" alt="世纪利通" />
+            <img src="../img/logo.png" alt="Century Litong" />
           </a>
         </div>
 
@@ -48,12 +25,12 @@
 
         <!-- 导航菜单+右侧区域 -->
         <div class="collapse navbar-collapse ms-auto" id="cnfNavMenu">
-          <ul class="navbar-nav me-auto">
+              <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="./">首页</a>
+                  <a class="nav-link nav-link-cnf" href="./">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="./about.html">关于我们</a>
+                  <a class="nav-link nav-link-cnf" href="./about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -63,23 +40,17 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                我们的产品
+                    Our Products
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./product_API.html"
-                    >模型API服务</a
-                  >
+                      <a class="dropdown-item" href="./product_API.html">API Tokens</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./product_metalServer.html"
-                    >裸金属服务器</a
-                  >
+                      <a class="dropdown-item" href="./product_metalServer.html">Bare Metal Server</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./product_GPUServer.html"
-                    >GPU云服务器</a
-                  >
+                      <a class="dropdown-item" href="./product_GPUServer.html">GPU Cloud Server</a>
                 </li>
               </ul>
             </li>
@@ -91,54 +62,45 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                解决方案
+                Solution
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./solution_rendor.html"
-                    >视觉特效与渲染</a
-                  >
+                  <a class="dropdown-item" href="./solution_rendor.html">VFX & Rendering</a>
+                    
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./solution_inference.html"
-                    >推理服务</a
-                  >
+                  <a class="dropdown-item" href="./solution_inference.html">Inference Services</a>
                 </li>
+                
                 <li>
-                  <a class="dropdown-item" href="./solution_AIpower.html"
-                    >AI算力</a
-                  >
+                  <a class="dropdown-item" href="./solution_AIpower.html">AI Compute</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="./price.html">价格</a>
+              <a class="nav-link nav-link-cnf" href="./price.html">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-cnf" href="#contact">联系我们</a>
+              <a class="nav-link nav-link-cnf" href="#contact">Contact Us</a>
             </li>
           </ul>
-
+                  
           <div class="nav-right-cnf ms-lg-5">
             <div class="lang-switch-cnf">
-              <a class="lang-btn-cnf " href="/cn" data-lang="zh"
-                >中</a
-              >
-              <a class="lang-btn-cnf active" href="/en" data-lang="en"
-                >EN</a
-              >
+              <a class="lang-btn-cnf " href="/cn" data-lang="cn">中</a>
+              <a class="lang-btn-cnf active" href="/en" data-lang="en">EN</a>
             </div>
-            <a
+           <a
               class="btn btn-primary workbench-btn-cnf"
               href="https://www.centurylt.co/console"
               target="_blank"
-              >工作台</a
-            >
+              >Console</a>
           </div>
         </div>
       </div>
     </nav>
-    <!-- <script src="../js/navbar.js"></script> -->
+
     <script>
       // 如果navbar-toggler显示，那么navbar-nav隐藏
       $(window).resize(function () {
@@ -179,5 +141,4 @@
         $(".dropdown-menu").show().css({ border: "none" });
       }
     </script>
-  </body>
-</html>
+
