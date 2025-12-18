@@ -3,6 +3,7 @@ $(function () {
   // 监听滚动事件，实现元素进入视口时的动画
   function checkScroll() {
     const contactSection = $(".contact-section");
+    if (!contactSection) return;
     const sectionTop = contactSection.offset().top;
     const sectionHeight = contactSection.outerHeight();
     const windowHeight = $(window).height();
@@ -35,14 +36,14 @@ $(function () {
       data: $(this).serialize(),
       success: function (response) {
         // 处理成功响应
-        $(this)[0].reset();
+        alert(response.message || "提交成功，感谢您的信息！");
         // 恢复按钮状态
-        submitBtn.text("确认提交").prop("disabled", false);
+        window.location.reload();
       },
       error: function () {
         // 处理错误响应
         alert("提交失败，请稍后重试。");
-        $(this)[0].reset();
+        //$(this)[0].reset();
         // 恢复按钮状态
         submitBtn.text("确认提交").prop("disabled", false);
       }
