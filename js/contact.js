@@ -3,6 +3,7 @@ $(function () {
   // 监听滚动事件，实现元素进入视口时的动画
   function checkScroll() {
     const contactSection = $(".contact-section");
+    if (!contactSection) return;
     const sectionTop = contactSection.offset().top;
     const sectionHeight = contactSection.outerHeight();
     const windowHeight = $(window).height();
