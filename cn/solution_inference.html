@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>世纪利通 - 全栈AI算力解决方案</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <!-- 依赖引入 -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.css" />
-    <link rel="stylesheet" href="./css/basic.css" />
-    <link rel="stylesheet" href="./css/video.css" />
-    <link rel="stylesheet" href="./css/service.css" />
-    <link rel="stylesheet" href="./css/solutions.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../bootstrap-icons-1.13.1/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/basic.css" />
+    <link rel="stylesheet" href="../css/video.css" />
+    <link rel="stylesheet" href="../css/service.css" />
+    <link rel="stylesheet" href="../css/solutions.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <style>
       .fade-in-section {
         opacity: 0;
@@ -44,28 +44,28 @@
     <section id="navbar"></section>
     <!-- 图片模块 -->
     <section id="video" class="video-full" style="height: 500px;">
-      <img src="./img/banner_solution_1.jpg" alt="顶部图片" class="video-background"></img>
+      <img src="../img/banner_solution_2.jpg" alt="顶部图片" class="video-background"></img>
       <div class="video-overlay"></div>
       <div class="video-content">
-        <h3>视觉特效与渲染</h3>
-        <p>借助基于云的生产管道加速您团队的工作流程</p>
+        <h3>推理服务</h3>
+        <p>更加灵敏的高速推理服务，全方位适应用户需求</p>
+
       </div>
     </section>
     <!-- 服务内容区域（带淡入缩放动效） -->
     <div class="service-content fade-in-section" style="margin-top: 80px;">
       <div class="service-desc content-transition" id="serviceDesc">
-        <h3>响应最快的自动扩展</h3>
+        <h3>更高的效率和更低的成本</h3>
         <div class="line"></div>
         <p>
-          最具创新性的VFX和动画工作室都在世纪利通上运行，凭借业界最快、响应最快的自动扩展功能，充分发挥性能。构建产品并管理基础设施，以支持任何规模的生产管道，同时确保您的项目以低成本获得高价值。
+          系统可根据业务需求自动扩展容器资源，响应速度超其他云服务商基于虚拟机管理程序的实例扩展模式。一旦有新的用户请求涌入，系统能瞬时感知并完成资源调度，无需人工干预，以更敏捷的扩容效率快速承接请求，保障服务响应的及时性与稳定性。
         </p>
-        <p>凭借高速稳定的GPU和CPU渲染能力，您可以扩展所需的资源，满足个性化的业务需求。</p>
-
+        <p>同时兼顾了高性能和高性价比。</p>
       </div>
       <div class="service-media">
         <img
-          src="./img/solution_1_1.jpg"
-          alt="渲染"
+          src="../img/solution_2_1.jpg"
+          alt="推理服务"
           id="serviceImg"
         />
       </div>
@@ -74,36 +74,35 @@
     <div class="service-content fade-in-section" style="margin-top: 80px;">
       <div class="service-media">
         <img
-          src="./img/solution_1_2.jpg"
-          alt="渲染"
+          src="../img/solution_2_2.jpg"
+          alt="推理服务"
           id="serviceImg"
         />
       </div>
       <div class="service-desc content-transition" id="serviceDesc">
-        <h3>灵活的虚拟工作站</h3>
+        <h3>不必担心如何配置</h3>
         <div class="line"></div>
         <p>
-          让您的团队能够随时随地实时访问他们所需的资源。世纪利通的虚拟工作站优化工作流程，减轻维护“内部”基础设施的负担，减轻团队压力，从而提高工作效率，为客户提供更好的最终产品。
+          KServe 能在 Kubernetes 上实现无服务器推理，操作接口简单易用，完全不用操心复杂配置。它完美适配 TensorFlow、PyTorch、XGBoost、scikit-learn、ONNX 等主流机器学习框架，轻松满足各类机器学习模型的生产部署与服务需求。
         </p>
-        <p>利用高性能的网络连接存储来管理模型文件、镜像和操作系统，为创作者提供充分的资源的同时无需为数据传输或带宽支付过多的费用。</p>
-
+        <p>用简洁易用的接口，在 Kubernetes 上实现无服务器推理</p>
+      
       </div>
     </div>
     <!-- 服务内容区域（带淡入缩放动效） -->
     <div class="service-content fade-in-section" style="margin-top: 80px;">
       <div class="service-desc content-transition" id="serviceDesc">
-        <h3>以更高的效率和速度部署</h3>
+        <h3>开箱即用的超现代高性能网络</h3>
         <div class="line"></div>
         <p>
-          世纪利通提供全面托管服务等措施，包括其所有必要的组件，作为一项服务交付给VFX和动画工作室，他们可以快速设置及可控成本。
+          世纪利通采用 Kubernetes 原生网络设计，把核心功能融入网络架构，你无需手动管理 IP 和 VLANs，就能直接获得所需的功能、速度与安全保障。同时支持负载平衡器服务的轻松部署，依托多家全球顶级服务商，单节点可实现高达 100Gbps 的公共互联网访问速度，还能通过专属虚拟私有云（VPC）完成个性化定制配置。
         </p>
-        <p>我们通过Kubernetes Helm Chart作为高可用性服务交付技术，使部署比以往更持久、更快速、更具可扩展性。</p>
 
       </div>
       <div class="service-media">
         <img
-          src="./img/solution_1_3.jpg"
-          alt="渲染"
+          src="../img/solution_2_3.jpg"
+          alt="推理服务"
           id="serviceImg"
         />
       </div>
@@ -120,7 +119,7 @@
               style="transition-delay: 0.1s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_01.png"
+                <img src="../img/service_module_01.png"
                 alt="高效设施" class="service-icon"></img>
               </div>
               <div class="service-content">
@@ -139,7 +138,7 @@
               style="transition-delay: 0.2s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_02.png"
+                <img src="../img/service_module_02.png"
                 alt="最新定价" class="service-icon"></img>
               </div>
               <div class="service-content">
@@ -159,7 +158,7 @@
               style="transition-delay: 0.3s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_03.png"
+                <img src="../img/service_module_03.png"
                 alt="按需扩展" class="service-icon"></img>
               </div>
               <div class="service-content">
@@ -177,7 +176,7 @@
               style="transition-delay: 0.4s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_04.png"
+                <img src="../img/service_module_04.png"
                 alt="一流支持" class="service-icon"></img>
               </div>
               <div class="service-content">

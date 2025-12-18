@@ -4,28 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>世纪利通 - 全栈AI算力解决方案</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <!-- 依赖引入 -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="bootstrap-icons-1.13.1/bootstrap-icons.css" />
-    <link rel="stylesheet" href="./css/basic.css" />
-    <link rel="stylesheet" href="./css/video.css" />
-    <link rel="stylesheet" href="./css/service.css" />
-    <link rel="stylesheet" href="./css/solutions.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../bootstrap-icons-1.13.1/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/basic.css" />
+    <link rel="stylesheet" href="../css/video.css" />
+    <link rel="stylesheet" href="../css/service.css" />
+    <link rel="stylesheet" href="../css/solutions.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <style>
-      /* 淡入动画样式 */
       .fade-in-section {
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
       }
-      
       .fade-in-section.is-visible {
         opacity: 1;
         transform: translateY(0);
+      }
+
+      #text-module{
+        margin-top: 50px;
+        width: 100%;
+        height: 400px;
+        background-color: #0f1533;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#fff;
+        font-size: 30px;
       }
     </style>
   </head>
@@ -34,15 +44,68 @@
     <section id="navbar"></section>
     <!-- 图片模块 -->
     <section id="video" class="video-full" style="height: 500px;">
-      <img src="./img/banner_about.jpg" class="video-background"></img>
+      <img src="../img/banner_product_server.jpg" alt="顶部图片" class="video-background"></img>
       <div class="video-overlay"></div>
       <div class="video-content">
-        <h2>欢迎加入，共创未来</h2>
-        <p>我们是一个正在不断壮大的团队</p>
-        <p>由聪明、真诚，且负责的人组成</p>
-        <p>重视解决问题的不同观点和方法</p>
+        <h3>裸金属服务器</h3>
+        <p>高度可配置、价格合理且可大规模使用</p>
       </div>
     </section>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>轻松部署与管理</h3>
+        <div class="line"></div>
+        <p>
+          支持一键式快速部署，省去繁琐配置流程，交付高效。配套智能管理平台集成远程监控、资源调度、故障预警等功能，操作界面简洁直观。无需专业运维团队，即可轻松实现服务器全生命周期管控，大幅降低管理成本，助力业务高效落地。
+        </p>
+        <p>一键启停、远程监控、资源弹性扩容全搞定，无需精通命令行，普通运维人员也能轻松驾驭全局</p>
+        </div>
+      <div class="service-media">
+        <img
+          src="../img/prod_2_1.jpg"
+          alt="裸金属服务器"
+          id="serviceImg"
+        />
+      </div>
+    </div>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-media">
+        <img
+          src="../img/prod_2_2.jpg"
+          alt="裸金属服务器"
+          id="serviceImg"
+        />
+      </div>
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>实时访问，快速启动</h3>
+        <div class="line"></div>
+        <p>
+          让您的团队能够实时访问他们所需的计算资源，优化了工作流程，减轻了维护基础设施的负担，从而提高了工作效率，减轻了团队的压力，为客户提供了更好的最终产品。
+        </p>
+        <p>借助我们专业的扩展技术，而无需操心基础架构管理问题。此外，我们的数据中心为最终用户提供了超低延迟体验，因此实时交互反应更加灵敏。</p>
+       </div>
+    </div>
+    <!-- 服务内容区域（带淡入缩放动效） -->
+    <div class="service-content fade-in-section" style="margin-top: 80px;">
+      <div class="service-desc content-transition" id="serviceDesc">
+        <h3>回到预算之内</h3>
+        <div class="line"></div>
+        <p>
+          AI 裸金属服务器能让数据科学家在预算内获得适配的硬件资源，无需为冗余配置额外付费。
+        </p>
+        <p>它可精准匹配研究场景需求，提供稳定、高性能的运算支撑，帮助科研人员摆脱硬件条件的束缚，将精力聚焦于算法优化与模型训练，高效推进研究目标落地。</p>
+   
+      </div>
+      <div class="service-media">
+        <img
+          src="../img/prod_2_3.jpg"
+          alt="裸金属服务器"
+          id="serviceImg"
+        />
+      </div>
+    </div>
     <!-- 服务模块 - 添加淡入动画类 -->
     <div class="service-module fade-in-section">
       <div class="container">
@@ -55,7 +118,7 @@
               style="transition-delay: 0.1s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_01.png"
+                <img src="../img/service_module_01.png"
                 alt="高效设施" class="service-icon"></img>
               </div>
               <div class="service-content">
@@ -74,7 +137,7 @@
               style="transition-delay: 0.2s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_02.png"
+                <img src="../img/service_module_02.png"
                 alt="最新定价" class="service-icon"></img>
               </div>
               <div class="service-content">
@@ -94,7 +157,7 @@
               style="transition-delay: 0.3s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_03.png"
+                <img src="../img/service_module_03.png"
                 alt="按需扩展" class="service-icon"></img>
               </div>
               <div class="service-content">
@@ -112,7 +175,7 @@
               style="transition-delay: 0.4s"
             >
               <div class="service-icon-wrap">
-                <img src="./img/service_module_04.png"
+                <img src="../img/service_module_04.png"
                 alt="一流支持" class="service-icon"></img>
               </div>
               <div class="service-content">
@@ -126,29 +189,8 @@
         </div>
       </div>
     </div>
-    <!-- 服务内容区域 - 添加淡入动画类 -->
-    <div class="service-content fade-in-section" style="margin-top: 80px;">
-      <div class="service-desc content-transition" id="serviceDesc">
-        <h3>我们的团队</h3>
-        <div class="line"></div>
-        <p>
-          我们的团队由一群充满梦想与才华的人组成，他们来自地球各个角落，每一位成员不仅拥有国际化的成长背景，更在人工智能、云计算、分布式系统、软件工程等领域具备深厚的专业素养和跨学科的技术专长。
-        </p>
-        <p>加入我们，即是拥抱一个更广阔的世界。在这里，你将与全球顶尖人才一起，用技术搭建连接未来的桥梁，在推动AI演进的同时，也书写属于这个时代的多元共融故事。我们期待与你一同，不仅改变行业，更重新定义可能性的边界。</p>
-        
-      </div>
-      <div class="service-media">
-        <img
-          src="./img/ourteam.jpg"
-          alt="我们的团队"
-          id="serviceImg"
-        />
-      </div>
-    </div>
-    <!-- 公司组织架构 - 添加淡入动画类 -->
-    <div class="fade-in-section" style="margin-top: 80px;">
-      <img src="./img/oginational_structure.png" alt="公司组织架构" class="oginational-structure-img" style="width: 100%;" />
-    </div>
+    <!-- #0f1533 -->
+     <div id="text-module">世纪利通让工作效率更高</div>
     <!-- 联系我们 -->
     <div id="contact" style="margin-top: 80px;"></div>
 
