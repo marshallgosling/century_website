@@ -46,86 +46,8 @@
       </div>
     </section>
     <!-- 服务模块 - 添加淡入动画类 -->
-    <div class="service-module fade-in-section">
-      <div class="container">
-        <!-- 第一行：2个模块 -->
-        <div class="service-row">
-          <!-- 卡片1：高效设施 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.1s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_01.png"
-                alt="High-performance Infrastructure" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>High-performance Infrastructure</h4>
-                <p>
-                  Built to deliver optimal performance for every workload, powered by industry-leading NVIDIA GPUs.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- 卡片2：最佳定价 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.2s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_02.png"
-                alt="Competitive Pricing" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>Competitive Pricing</h4>
-                <p>Flexible configurations and resource-based pricing — pay only for what you use.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 第二行：2个模块 -->
-        <div class="service-row">
-          <!-- 卡片3：按需扩展 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.3s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_03.png"
-                alt="Elastic Scaling" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>Elastic Scaling</h4>
-                <p>
-                  Scale resources up or down within seconds — no more long waits for GPU allocation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- 卡片4：一流支持 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.4s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_04.png"
-                alt="Premier Support" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>Premier Support</h4>
-                <p>
-                  Our support engineers help deploy and scale workloads quickly and reliably.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="service" class="service-module fade-in-section">
+      
     </div>
     <!-- 服务内容区域 - 添加淡入动画类 -->
     <div class="service-content fade-in-section" style="margin-top: 80px;">
@@ -160,6 +82,7 @@
       $("#navbar").load("navbar.html");
       $("#footer").load("footer.html");
       $("#contact").load("contact.html");
+      $("#service").load("service_module.html");
 
       // 淡入动画逻辑
       document.addEventListener('DOMContentLoaded', function() {

@@ -109,86 +109,8 @@
       </div>
     </div>
     <!-- 服务模块 - 添加淡入动画类 -->
-    <div class="service-module fade-in-section">
-      <div class="container">
-        <!-- 第一行：2个模块 -->
-        <div class="service-row">
-          <!-- 卡片1：高效设施 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.1s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_01.png"
-                alt="Efficient Infrastructure" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>Efficient Infrastructure</h4>
-                <p>
-                  Century Litong Cloud is engineered to deliver optimal performance for every workload, built on the industry’s widest selection of high-end NVIDIA GPUs.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- 卡片2：最佳定价 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.2s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_02.png"
-                alt="Competitive Pricing" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>Competitive Pricing</h4>
-                <p>We offer flexible configurations and resource-based pricing so you only pay for the resources you consume.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 第二行：2个模块 -->
-        <div class="service-row">
-          <!-- 卡片3：按需扩展 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.3s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_03.png"
-                alt="On-Demand Scalability" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>On-Demand Scalability</h4>
-                <p>
-                  We give customers the freedom to scale up and down in seconds — strict resource quotas and long waits for GPU acceleration are a thing of the past.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- 卡片4：一流支持 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.4s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_04.png"
-                alt="Premium Support" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>Premium Support</h4>
-                <p>
-                  Our support engineering team helps customers deploy and scale workloads quickly and efficiently, providing first-class assistance to ensure success.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="service" class="service-module fade-in-section">
+      
     </div>
     <!-- #0f1533 -->
     <div id="text-module">Century Litong improves productivity</div>
@@ -202,6 +124,7 @@
       $("#navbar").load("navbar.html");
       $("#footer").load("footer.html");
       $("#contact").load("contact.html");
+      $("#service").load("service_module.html");
 
       // 淡入动画逻辑
       document.addEventListener('DOMContentLoaded', function() {
