@@ -110,87 +110,8 @@
       </div>
     </div>
     <!-- 服务模块 - 添加淡入动画类 -->
-    <div class="service-module fade-in-section">
-      <div class="container">
-        <!-- 第一行：2个模块 -->
-        <div class="service-row">
-          <!-- 卡片1：高效设施 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.1s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_01.png"
-                alt="高效设施" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>高效设施</h4>
-                <p>
-                  世纪利通云专为每种工作负载提供最佳性能而打造。
-        业界最广泛的高端NVIDIA GPUs是我们的基础。
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- 卡片2：最佳定价 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.2s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_02.png"
-                alt="最新定价" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>最佳定价</h4>
-                <p>我们为您提供配置方案的灵活性，并使用基于资源的定价。您只需在使用资源时为使用的资源付费。</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 第二行：2个模块 -->
-        <div class="service-row">
-          <!-- 卡片3：按需扩展 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.3s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_03.png"
-                alt="按需扩展" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>按需扩展</h4>
-                <p>
-                  我们给予客户在几秒钟内扩展和缩减的自由和权力，严格的资源配额和等待GPU加速的时间已经成为过去。
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- 卡片4：一流支持 -->
-          <div class="service-card-wrap">
-            <div
-              class="service-card"
-              style="transition-delay: 0.4s"
-            >
-              <div class="service-icon-wrap">
-                <img src="../img/service_module_04.png"
-                alt="一流支持" class="service-icon"></img>
-              </div>
-              <div class="service-content">
-                <h4>一流支持</h4>
-                <p>
-                  我们的支持工程师团队尽可能快速高效地设置部署和扩展工作负载，用一流的支持帮助我们的客户取得成功。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="service" class="service-module fade-in-section">
+      
     </div>
     <!-- #0f1533 -->
      <div id="text-module">世纪利通让工作效率更高</div>
@@ -204,7 +125,7 @@
       $("#navbar").load("navbar.html");
       $("#footer").load("footer.html");
       $("#contact").load("contact.html");
-
+      $('#service').load('service_module.html');
       // 淡入动画逻辑
       document.addEventListener('DOMContentLoaded', function() {
         // 检查元素是否在视口中
