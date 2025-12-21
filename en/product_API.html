@@ -53,7 +53,7 @@
         <p>Lightweight API access to generative AI engines — build intelligent apps in seconds</p>
       </div>
     </section>
-    <!-- 服务内容区域（带淡入缩放动效） -->
+    <!-- Service content area (with fade-in animation) -->
     <div class="service-content fade-in-section" style="margin-top: 80px;">
       <div class="service-desc content-transition" id="serviceDesc">
         <h3>Keep Your Services Running Smoothly</h3>
@@ -72,7 +72,7 @@
         />
       </div>
     </div>
-    <!-- 服务内容区域（带淡入缩放动效） -->
+    <!-- Service content area (with fade-in animation) -->
     <div class="service-content fade-in-section" style="margin-top: 80px;">
       <div class="service-media">
         <img
@@ -91,7 +91,7 @@
         
       </div>
     </div>
-    <!-- 服务内容区域（带淡入缩放动效） -->
+    <!-- Service content area (with fade-in animation) -->
     <div class="service-content fade-in-section" style="margin-top: 80px;">
       <div class="service-desc content-transition" id="serviceDesc">
         <h3>Operational Insights</h3>
@@ -131,24 +131,24 @@
       $("#service").load("service_module.html");
       // Fade-in animation logic
       document.addEventListener('DOMContentLoaded', function() {
-        // 检查元素是否在视口中
+        // Check if elements are in the viewport
         const observerOptions = {
           root: null,
           rootMargin: '0px',
           threshold: 0.1
         };
 
-        // 创建交叉观察器实例
+        // Create IntersectionObserver instance
         const observer = new IntersectionObserver((entries, observer) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target); // 只触发一次
+              observer.unobserve(entry.target); // Trigger only once
             }
           });
         }, observerOptions);
 
-        // 观察所有带有fade-in-section类的元素
+        // Observe all elements with the 'fade-in-section' class
         document.querySelectorAll('.fade-in-section').forEach(section => {
           observer.observe(section);
         });
