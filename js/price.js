@@ -22,23 +22,6 @@ $(function () {
   // 监听滚动
   $(window).on("scroll", checkScroll);
 
-  // 表格行点击交互
-  $(".pricing-table tbody tr").click(function () {
-    const product = $(this).find("td:eq(0)").text();
-    const cycle = $(this).find("td:eq(1)").text();
-    const range = $(this).find("td:eq(2)").text();
-
-    // 点击时添加缩放动画
-    $(this).css("transform", "scale(1.02)");
-    setTimeout(() => {
-      $(this).css("transform", "translateY(-2px)");
-    }, 200);
-
-    alert(`您选择了【${product}】
-合约周期：${cycle}
-规格范围：${range}
-具体价格请联系客服咨询~`);
-  });
 
   // 表头吸顶增强（可选）
   $(window).scroll(function () {
